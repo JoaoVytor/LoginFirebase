@@ -15,7 +15,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         let windows = UIWindow(windowScene: windowScene)
-        let vc = ViewController()
+        let vc = LoginViewController()
         windows.rootViewController = vc
         windows.makeKeyAndVisible()
         self.window = windows

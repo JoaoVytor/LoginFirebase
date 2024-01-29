@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     let titleLabel: UILabel = {
         let label = UILabel()
