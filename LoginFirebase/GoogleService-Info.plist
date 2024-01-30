@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCIenTr6ZAtg6k3z6s9Q3wkzZ2fEk6nCV4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>334923060261</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.joaovytor.LoginFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>loginfirebase-c8917</string>
+	<key>STORAGE_BUCKET</key>
+	<string>loginfirebase-c8917.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:334923060261:ios:bff49500731eefb0845bcc</string>
+</dict>
+</plist>

@@ -5,10 +5,12 @@
 //  Created by João Vitor Sousa on 29/01/24.
 //
 
-import Foundation
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
+    
+    var auth: Auth?
     
     let titleLabel: UILabel = {
         let label = UILabel()
@@ -58,6 +60,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.auth = Auth.auth()
         view.backgroundColor = UIColor.white
         
         view.addSubview(titleLabel)
@@ -97,11 +100,39 @@ class LoginViewController: UIViewController {
     }
 
     @objc func loginButtonTapped() {
-        print("Login")
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+
+        self.auth?.signIn(withEmail: email, password: password, completion: { result, error in
+
+            if let error = error {
+                let alert = UIAlertController(title: "Erro", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
+
+            let alert = UIAlertController(title: "Sucesso", message: "Você foi logado com sucesso", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+
+        })
     }
 
     @objc func cadastrarButtonTapped() {
-        print("Cadastrar")
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
+        
+        self.auth?.createUser(withEmail: email, password: password, completion: { result, error in
+            
+            if let error = error {
+                let alert = UIAlertController(title: "Erro", message: error.localizedDescription, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+                return
+            }
+            
+            let alert = UIAlertController(title: "Sucesso", message: "Você foi cadastrado com sucesso", preferredStyle: .alert)
+        })
     }
 }
-
