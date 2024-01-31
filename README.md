@@ -33,6 +33,6 @@ pod installl
 ```
 
 # Dependencies
-Swift
-Firebase
-Cocopods
+- Swift
+- Firebase
+- Cocopods
