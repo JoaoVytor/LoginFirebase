@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3291212B75BE1A00FAC97E /* SwiftUIPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3291202B75BE1A00FAC97E /* SwiftUIPreviewViewController.swift */; };
+		7A3291232B75BE6F00FAC97E /* SwiftUIPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3291222B75BE6F00FAC97E /* SwiftUIPreviewView.swift */; };
 		7AEF4A352B6841AC0063BF3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF4A342B6841AC0063BF3C /* AppDelegate.swift */; };
 		7AEF4A372B6841AC0063BF3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF4A362B6841AC0063BF3C /* SceneDelegate.swift */; };
 		7AEF4A392B6841AC0063BF3C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AEF4A382B6841AC0063BF3C /* LoginViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3291202B75BE1A00FAC97E /* SwiftUIPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreviewViewController.swift; sourceTree = "<group>"; };
+		7A3291222B75BE6F00FAC97E /* SwiftUIPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreviewView.swift; sourceTree = "<group>"; };
 		7AEF4A312B6841AC0063BF3C /* LoginFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AEF4A342B6841AC0063BF3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AEF4A362B6841AC0063BF3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A32911F2B75BD6900FAC97E /* Preview Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7A3291202B75BE1A00FAC97E /* SwiftUIPreviewViewController.swift */,
+				7A3291222B75BE6F00FAC97E /* SwiftUIPreviewView.swift */,
+			);
+			path = "Preview Helper";
+			sourceTree = "<group>";
+		};
 		7AEF4A282B6841AC0063BF3C = {
 			isa = PBXGroup;
 			children = (
+				7A32911F2B75BD6900FAC97E /* Preview Helper */,
 				7AEF4A332B6841AC0063BF3C /* LoginFirebase */,
 				7AEF4A322B6841AC0063BF3C /* Products */,
 				8D2C316731EB76C737067DF0 /* Pods */,
@@ -147,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AEF4A392B6841AC0063BF3C /* LoginViewController.swift in Sources */,
+				7A3291212B75BE1A00FAC97E /* SwiftUIPreviewViewController.swift in Sources */,
+				7A3291232B75BE6F00FAC97E /* SwiftUIPreviewView.swift in Sources */,
 				7AEF4A352B6841AC0063BF3C /* AppDelegate.swift in Sources */,
 				7AEF4A372B6841AC0063BF3C /* SceneDelegate.swift in Sources */,
 			);
@@ -218,7 +234,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -290,8 +306,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYSBP62SYJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -299,6 +317,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +325,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaovytor.LoginFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,8 +337,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYSBP62SYJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoginFirebase/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -326,6 +348,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +356,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joaovytor.LoginFirebase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

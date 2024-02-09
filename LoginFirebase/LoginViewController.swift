@@ -136,3 +136,13 @@ class LoginViewController: UIViewController {
         })
     }
 }
+
+import SwiftUI
+struct BestInClassPreviews_Previews: PreviewProvider {
+    static var previews: some View {
+        UIViewControllerPreview {
+            let vc = LoginViewController()
+            return vc
+        }
+    }
+}
